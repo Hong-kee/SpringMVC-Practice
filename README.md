@@ -28,3 +28,11 @@ SpringBoot 기반으로 연습해보는 Project입니다.
 > 
 ![image](https://user-images.githubusercontent.com/69206748/144590143-36c9faae-bfc3-4688-a315-77f78d77ed5a.png)
 >
+> Controller V1 (Version1) -Front Controller 처음 도입-
+> ![image](https://user-images.githubusercontent.com/69206748/144594981-ee47c4ee-fb6d-48fd-b53d-9d177e4bda6d.png)
+>
+>
+> Controller V2 (Version2) -각 Controller에 있던 View를 따로 분리해서 MyView 클래스에 설정-
+> ![image](https://user-images.githubusercontent.com/69206748/144595087-4267fdd6-a1be-4600-b68d-230309eab06c.png)
+>
+>
