@@ -39,7 +39,7 @@ SpringBoot 기반으로 연습해보는 회원가입 Project입니다.
 > ![image](https://user-images.githubusercontent.com/69206748/144595087-4267fdd6-a1be-4600-b68d-230309eab06c.png)
 >
 >
-> Controller V3 (Version3) -ModelView를 따로 만들어서 논리 이름을 물리 이름으로 바꿔주는 형식을 채용.
+> Controller V3 (Version3) -ModelView객체를 따로 만들어서 viewResolver를 통해 논리 이름을 물리 이름으로 바꿔주는 형식을 채용.
 > ![image](https://user-images.githubusercontent.com/69206748/144620818-052e13a0-3149-4aa0-afde-46b87c513450.png)
 >
 >
