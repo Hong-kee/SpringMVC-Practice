@@ -31,11 +31,23 @@ SpringBoot 기반으로 연습해보는 회원가입 Project입니다.
 > 
 ![image](https://user-images.githubusercontent.com/69206748/144590143-36c9faae-bfc3-4688-a315-77f78d77ed5a.png)
 >
-> Controller V1 (Version1) -Front Controller 처음 도입-
+> * Controller V1 (Version1) -Front Controller 처음 도입-
+>
 > ![image](https://user-images.githubusercontent.com/69206748/144594981-ee47c4ee-fb6d-48fd-b53d-9d177e4bda6d.png)
 >
 >
-> Controller V2 (Version2) -각 Controller에 있던 View를 따로 분리해서 MyView 클래스에 설정-
+> * Controller V2 (Version2) -각 Controller에 있던 View를 따로 분리해서 MyView 클래스에 설정-
+>
 > ![image](https://user-images.githubusercontent.com/69206748/144595087-4267fdd6-a1be-4600-b68d-230309eab06c.png)
+>
+>
+> * Controller V3 (Version3) -ModelView객체를 따로 만들어서 viewResolver를 통해 논리 이름을 물리 이름으로 바꿔주는 형식을 채용.
+> 
+> ![image](https://user-images.githubusercontent.com/69206748/144620818-052e13a0-3149-4aa0-afde-46b87c513450.png)
+>
+2021/12/04
+> * Controller V4 (Version4) -기존 ModelView객체를 만들어서 반환했던 것이 불편했다. 좋은 프레임워크는 아키텍처도 중요하지만, 그와 더불어 실제 개발하는 개발자가 단순하고 편리하게 사용할 수 있어야 한다. 소위 실용성이 있어야 한다. 따라서 ModelView를 반환하지 않고, ViewName 즉, 논리 이름만 반환한다.-
+> 
+> ![image](https://user-images.githubusercontent.com/69206748/144702739-577e7703-5f1d-4033-b3ea-09d3cab601e7.png)
 >
 >
