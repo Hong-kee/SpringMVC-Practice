@@ -45,7 +45,7 @@ SpringBoot 기반으로 연습해보는 회원가입 Project입니다.
 > 
 > ![image](https://user-images.githubusercontent.com/69206748/144620818-052e13a0-3149-4aa0-afde-46b87c513450.png)
 >
-2021/12/03
+2021/12/04
 > * Controller V4 (Version4) -기존 ModelView객체를 만들어서 반환했던 것이 불편했다. 좋은 프레임워크는 아키텍처도 중요하지만, 그와 더불어 실제 개발하는 개발자가 단순하고 편리하게 사용할 수 있어야 한다. 소위 실용성이 있어야 한다. 따라서 ModelView를 반환하지 않고, ViewName 즉, 논리 이름만 반환한다.-
 > 
 > ![image](https://user-images.githubusercontent.com/69206748/144702739-577e7703-5f1d-4033-b3ea-09d3cab601e7.png)
