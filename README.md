@@ -55,4 +55,10 @@ SpringBoot 기반으로 연습해보는 회원가입 Project입니다.
 >
 > ![image](https://user-images.githubusercontent.com/69206748/144705864-d319d58e-258e-4508-b8b1-62c1c95b3d38.png)
 >
+2021/12/05
+> * 실제 Spring MVC 구조 -우리가 구현했던 Controller V5는 사실 Spring MVC의 구조와 매우 흡사한 구조이다. 다음과 같은 그림을 보면 이해할 수 있을 것이다.-
+>
+> ![image](https://user-images.githubusercontent.com/69206748/144743951-a9aa0e40-e115-4598-9d6f-885a1cb4b262.png)
+>
+>
 >
