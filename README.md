@@ -51,3 +51,14 @@ SpringBoot 기반으로 연습해보는 회원가입 Project입니다.
 > ![image](https://user-images.githubusercontent.com/69206748/144702739-577e7703-5f1d-4033-b3ea-09d3cab601e7.png)
 >
 >
+> * Controller V5 (Version5) -Controller Version을 진화시키면서 풀지 못한 숙제가 있었다. 현재 구현되어있는 것이 V3인데 V4로 바꾸고 싶다면 어떻게 해야할까? 현재 구현되어 있는 코드를 사용한다면 ControllerV3, ControllerV4같이 구체적인 Controller를 Mapping해주었기 때문에 유연성이 매우 떨어진다. 따라서 "Adapter Pattern"을 채용하기로 했다. View단은 그대로 가져가되, Controller부분을 좀 더 유연하게 하기 위해 HandlerAdapter를 만들 것이고 그것을 가져오기 위해 Object형식의 HandlerMappingMap을 구현할 것이다. 비유를 하자면, 110V와 220V의 Handler가 있는데 110V를 220V로 바꿔야 한다고 하자. 그렇다면 110V를 가져와서 HandlerAdapter를 통해 220V로 변경해서 주겠다는 소리다. HandlerAdapter는 MyHandlerAdapter Interface를 구현한 각 구현 Handler이다. 따라서 유연한 변경이 가능하다.-
+>
+> ![image](https://user-images.githubusercontent.com/69206748/144705864-d319d58e-258e-4508-b8b1-62c1c95b3d38.png)
+>
+2021/12/05
+> * 실제 Spring MVC 구조 -우리가 구현했던 Controller V5는 사실 Spring MVC의 구조와 매우 흡사한 구조이다. 다음과 같은 그림을 보면 이해할 수 있을 것이다.-
+>
+> ![image](https://user-images.githubusercontent.com/69206748/144743951-a9aa0e40-e115-4598-9d6f-885a1cb4b262.png)
+>
+>
+>
