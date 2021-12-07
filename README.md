@@ -69,3 +69,7 @@ SpringBoot 기반으로 연습해보는 회원가입 Project입니다.
 > 6. viewResolver 호출 : 뷰 리졸버를 찾고 실행한다.(JSP의 경우 InternalResourceViewResolver가 자동 등록되고 사용된다.)
 > 7. View 반환 : 뷰 리졸버는 뷰의 논리 이름을 물리 이름으로 바꾸고, 렌더링 역할을 담당하는 뷰 객체를 반환한다.(JSP의 경우 InternalResourceView(JstlView)를 반환하는데, 내부에 forward() 로직이 있다.
 > 8. 뷰 렌더링
+***2021/12/06***
+> 개인적인 일로 휴식
+***2021/12/07***
+> 개인적인 일로 휴식
