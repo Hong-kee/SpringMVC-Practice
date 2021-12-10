@@ -16,7 +16,9 @@ SpringBoot 기반으로 Spring의 동작 원리를 알아봅시다.
 > Java 11
 > 
 > Gradle
-
+>
+> War
+>
 *Period*
 
 > Start : ***2021/12/02~***
