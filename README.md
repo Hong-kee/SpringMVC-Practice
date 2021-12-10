@@ -109,3 +109,4 @@ SpringBoot 기반으로 Spring의 동작 원리를 알아봅시다.
 > Spring은 HTTP Request Parameter를 @RequestParam으로 받을 수 있다. Parameter에 HttpServletRequest, HttpServletResponse를 모두 받지 않고 원하는 Parameter만 빼낼 수 있다. (ex. @RequestParam("username") String username == String username = request.getParameter("username");)
 > 
 > 또한 @RequestMapping은 URL매칭뿐만 아니라 HTTP Method도 구분할 수 있다. GET일 경우 @GetMapping, POST일 경우 @PostMapping로 구분할 수 있다.
+>
