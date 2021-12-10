@@ -77,5 +77,33 @@ SpringBoot 기반으로 연습해보는 회원가입 Project입니다.
 > 개인적인 일로 휴식
 >
 ***2021/12/08***
-> 정리 예정
+> * @RequestMapping
+> Spring은 Annotation을 활용한 유연하고 실용적인 Controller를 만들었는데 이것이 바로 @RequestMapping를 이용한 Controller이다. 스프링이 Controller를 찾을 때는 앞서 배웠듯, HandlerMapping을 통해 Controller를 찾고 HandlerAdapter를 통해 찾은 Controller를 형태를 맞춰 전달한다.
+> ![image](https://user-images.githubusercontent.com/69206748/145500401-3874dbfd-c944-46a5-8831-6a9b82f1c7fd.png)
+> * @Controller
 >
+> Spring이 자동으로 Bean으로 등록한다. (@Controller의 내부에 @Component가 있어서 @ComponentScan의 대상이 된다.)
+> Spring MVC에서 Annotation 기반 Controller로 인식하여 우선순위가 가장 높다. 따라서 다른 Spring Bean보다 먼저 수행된다.
+> 
+> * @RequestMapping
+>
+> 요청 정보를 매핑한다. 해당 URL이 호출되면 이 메서드가 호출된다. Annotation기반으로 동작하기 때문에, 평상시에 오버라이드해서 쓰던 process메서드를 쓰지 않고 임의로 이름을 지어도 된다.
+>
+> * ModelAndView
+>
+> 모델과 뷰 정보를 담아서 반환하면 된다.
+> 
+> ![image](https://user-images.githubusercontent.com/69206748/145501107-fc4bb469-cfdf-4497-bbc0-cc80bdc1527a.png)
+> * Model Parameter
+>
+> save()를 보면 Model을 Parameter로 받는 것을 확인할 수 있다. 따라서 전달 객체를 따로 안 만들어도 되는 편리함을 갖고 있다.
+> 
+> * ViewName
+> 
+> View의 논리 이름을 반환할 수 있다. application.properties에서 prefix, suffix를 설정하면 물리 이름으로 변경해준다.
+>
+> * @RequestParam
+> 
+> Spring은 HTTP Request Parameter를 @RequestParam으로 받을 수 있다. Parameter에 HttpServletRequest, HttpServletResponse를 모두 받지 않고 원하는 Parameter만 빼낼 수 있다. (ex. @RequestParam("username") String username == String username = request.getParameter("username");)
+> 
+> 또한 @RequestMapping은 URL매칭뿐만 아니라 HTTP Method도 구분할 수 있다. GET일 경우 @GetMapping, POST일 경우 @PostMapping로 구분할 수 있다.
