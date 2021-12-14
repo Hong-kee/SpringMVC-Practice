@@ -1,4 +1,4 @@
-# SpringMVC_Practice
+# SpringMVC-Practice
 
 SpringBoot 기반으로 Spring의 동작 원리를 알아봅시다.
 > 기능보단 MVC의 설계, Annotation을 쓰면 왜 편리하고 그것을 쓰기 전까지 직접 만들어보는 '공부용' 입니다.
